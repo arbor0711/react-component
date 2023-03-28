@@ -1,8 +1,7 @@
-import Btn from "./components/btn";
-import "./App.css";
+import ModeToggler from "./components/ModeToggler";
 
 function App() {
-  return <Btn />;
+  return <ModeToggler />;
 }
 
 export default App;
