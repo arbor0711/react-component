@@ -1,16 +1,24 @@
-import Heading from "./components/Heading";
-import Main from "./components/main";
-import Sidebar from "./components/sidebar";
 import "./index.css";
+import Card from "./components/Card";
 
-function App() {
+const bool = false;
+const string = "just";
+
+function Example(props) {
   return (
-    <div className="App">
-      <Heading />
-      <Main name="Jef" position={4} />
-      <Sidebar />
+    <div>
+      <h1>Task: Add three Card elements</h1>
+      <Card h2="First card's h2" h3="First card's h3" />
+      <Card h2="Second card's h2" h3="Second card's h3" />
+      <Card h2="Third card's h2" h3="Third card's h3" />
     </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <div className="App">
+      <Example toggleBoolean={!bool} math={10 + 20 / 2} str={string} />
+    </div>
+  );
+}
