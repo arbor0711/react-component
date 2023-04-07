@@ -1,4 +1,5 @@
 import RegesterForm from "./components/RegesterForm";
+import TextInputWithFocusButton from "./components/TextInputWithFocusButton";
 function App() {
   const handleClick = () => {
     let randomNum = Math.floor(Math.random() * 3) + 1;
@@ -8,7 +9,7 @@ function App() {
   };
   return (
     <div>
-      <RegesterForm />
+      <TextInputWithFocusButton />
     </div>
   );
 }
