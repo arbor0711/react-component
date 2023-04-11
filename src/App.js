@@ -1,15 +1,16 @@
-import RegesterForm from "./components/RegesterForm";
-import TextInputWithFocusButton from "./components/TextInputWithFocusButton";
+import React, { useState } from "react";
+import Heading from "./components/Heading";
+
 function App() {
-  const handleClick = () => {
-    let randomNum = Math.floor(Math.random() * 3) + 1;
-    console.log(randomNum);
-    let userInput = prompt("Enter a number");
-    alert(`computer number was ${randomNum} and your gusse ${userInput}`);
-  };
+  const [word, setWord] = React.useState("Eat");
+
+  function handleClick() {
+    setWord("Drink");
+  }
   return (
-    <div>
-      <TextInputWithFocusButton />
+    <div className="App">
+      <Heading message={word + " at Little Lemon"} />
+      <button onClick={handleClick}>Click hear</button>
     </div>
   );
 }
