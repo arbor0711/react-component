@@ -7,5 +7,5 @@ const MealsProvider = ({ children }) => {
     <MealsContext.provider value={{ meals }}>{children}</MealsContext.provider>
   );
 };
-export const useMealsListContext = () => React.useContext;
+export const useMealsListContext = () => React.useContext(MealsContext);
 export default MealsProvider;
