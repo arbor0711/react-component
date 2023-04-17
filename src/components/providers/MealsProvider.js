@@ -4,7 +4,7 @@ const todayMeals = ["Baked Beans", "Baked Sweet Potatoes", "Baked Potatoes"];
 const MealsProvider = ({ children }) => {
   const [meals, setMeals] = React.useState(todayMeals);
   return (
-    <MealsContext.provider value={{ meals }}>{children}</MealsContext.provider>
+    <MealsContext.Provider value={{ meals }}>{children}</MealsContext.Provider>
   );
 };
 export const useMealsListContext = () => React.useContext(MealsContext);

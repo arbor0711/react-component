@@ -1,5 +1,5 @@
 import { useMealsListContext } from "./providers/MealsProvider";
-const counter = () => {
+const Counter = () => {
   const { meals } = useMealsListContext();
   return (
     <div>
@@ -8,4 +8,4 @@ const counter = () => {
   );
 };
 
-export default counter;
+export default Counter;
