@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import MealsProviders from "./components/providers/MealsProvider";
 import MealsList from "./components/MealsList";
 import Counter from "./components/Counter";
 
@@ -10,6 +10,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
